@@ -1,0 +1,326 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* Reset général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #a892ff, #6e57e0);
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(227, 42, 252);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+section {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2,
+h3 {
+    color: #ffd700;
+}
+
+ul {
+    text-align: left;
+    padding: 10px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button,
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #ffd700;
+    color: #6e57e0;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover,
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.diapo1 {
+    margin: 5px;
+    width: px;
+    height: 280px;
+    border: 5px #000;
+    background-image: url(image/téléchargement (1).jpeg);
+    border-radius: 15cap;
+    align-items: center;
+
+
+    -webkit-animation-name: diapo1;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+
+
+    -moz-animation-name: diapo1;
+    -moz-animation-duration: 15s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+
+    animation-name: diapo1;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+
+}
+
+@-webkit-keyframes diapo1 {
+    0% {
+        background-image: url("image/canvaaa.jpeg");
+    }
+
+    25% {
+        background-image: url("image/canvaaa.jpeg");
+    }
+
+    75% {
+        background-image: url("image/téléchargement.jpeg");
+    }
+
+    100% {
+        background-image: url("image/PPPL6346.JPG");
+    }
+}
+
+@-moz-keyframes diapo1 {
+    0% {
+        background-image: url("image/téléchargement (1).jpeg");
+    }
+
+    25% {
+        background-image: url("image/canvaaa.jpeg");
+    }
+
+    75% {
+        background-image: url("image/téléchargement.jpeg");
+    }
+
+    100% {
+        background-image: url("image/PPPL6346.JPG");
+    }
+}
+
+@keyframes diapo1 {
+    0% {
+        background-image: url("image/téléchargement (1).jpeg");
+    }
+
+    25% {
+        background-image: url("image/canvaaa.jpeg");
+    }
+
+    75% {
+        background-image: url("image/téléchargement.jpeg");
+    }
+
+    100% {
+        background-image: url("image/PPPL6346.JPG");
+    }
+}
+
+/* Styliser l'image de profil */
+#profile-pic {
+    width: 200px;
+    /* Largeur de l'image */
+    height: 200px;
+    /* Hauteur de l'image */
+    border-radius: 100%;
+    /* Rend l'image ronde */
+    object-fit: cover;
+    /* Ajuste bien l'image sans déformation */
+    border: 4px solid #ffd700;
+    /* Bordure dorée */
+    display: block;
+    /* Permet de centrer facilement */
+    margin: 0 auto 15px;
+    /* Centre l'image */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    /* Ajoute une légère ombre */
+}
+
+/* Responsivité : réduire la taille sur les petits écrans */
+@media screen and (max-width: 768px) {
+    #profile-pic {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+
+
+
+
+
+:root {
+    /* Déclare des variables CSS globales accessibles partout dans le document */
+    --color-green: #0ff739;
+    /* Définit une couleur verte (#00E72A) sous la variable '--color-green' */
+}
+
+
+
+
+
+#container {
+    /* Applique des styles au conteneur avec l'ID 'container' */
+    width: 100%;
+    border-radius: 5px;
+    padding: 1rem;
+    border: 1px solid var(--color-green);
+    background-color: #0d0e0d;
+}
+
+.container-head {
+    /* Applique des styles à l'élément avec la classe 'container-head' */
+    margin-bottom: 1rem;
+    color: #0ff739;
+
+}
+
+.container-output p {
+    white-space: pre;
+}
+
+.container-input {
+    display: flex;
+    color: #0ff739;
+}
+
+.container-input input {
+    width: 100%;
+    margin-left: 5px;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--color-green);
+    font: inherit;
+}
+
+
+label {
+    font-size: 1.1em;
+    margin: 10px 0 5px;
+    color: #ffd700;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ffd700;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+    font-size: 1em;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6e57e0;
+    box-shadow: 0 0 8px rgba(110, 87, 224, 0.5);
+}
+
+button {
+    background: #ffd700;
+    color: #6e57e0;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Responsivité */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    button,
+    .btn {
+        width: 100%;
+    }
+}
+
+
